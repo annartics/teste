@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
+    <title>Cadrastro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Olá mundo</h1>
-    <script src="app.js"></script>
+    <section>
+        <h2>Contate-nos</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="ex. Clara Beatriz da Silva" autocomplete="off" required>
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="ex. clarabeatriz.silva@gmail.com"autocomplete="off"required>
+
+            <label>Telefone</label>
+            <input type="tel" name="tel" placeholder="ex.(99) 99999-9999" autocomplete="off"></textarea>
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="accessKey" value="31de8d48-ba44-4e1b-af48-99524274cd55">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+        </form>
+    </section>
 </body>
-</html>
